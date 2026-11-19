@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="banking.gui.controller.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="450"
+      prefHeight="400">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="ACCESS BANK BOTSWANA"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Label text="Banking System Login"
+           style="-fx-font-size: 16px;"/>
+
+    <TextField fx:id="usernameField"
+               promptText="Enter username"
+               prefWidth="280"/>
+
+    <PasswordField fx:id="passwordField"
+                   promptText="Enter password"
+                   prefWidth="280"/>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Login"
+                onAction="#handleLogin"
+                prefWidth="100"/>
+
+        <Button text="Cancel"
+                onAction="#handleCancel"
+                prefWidth="100"/>
+    </HBox>
+
+    <Label fx:id="messageLabel"
+           text="Please enter your login details."/>
+
+</VBox>

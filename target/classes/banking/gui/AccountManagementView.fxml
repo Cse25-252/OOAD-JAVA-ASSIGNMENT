@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="banking.gui.controller.AccountManagementController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="650"
+      prefHeight="550"
+      style="-fx-padding: 30;">
+
+    <Label text="ACCESS BANK BOTSWANA"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Label text="ACCOUNT MANAGEMENT"
+           style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="accountNumberField"
+               promptText="Enter Account Number"
+               maxWidth="300"/>
+
+    <TextField fx:id="customerIdField"
+               promptText="Enter Customer ID"
+               maxWidth="300"/>
+
+    <ComboBox fx:id="accountTypeBox"
+              promptText="Select Account Type"
+              maxWidth="300"/>
+
+    <TextField fx:id="initialDepositField"
+               promptText="Enter Initial Deposit (BWP)"
+               maxWidth="300"/>
+
+    <Button text="Create Account"
+            onAction="#handleCreateAccount"/>
+
+    <Label fx:id="messageLabel"
+           text="Enter account details."/>
+
+    <Button text="Back to Dashboard"
+            onAction="#handleBack"/>
+
+</VBox>

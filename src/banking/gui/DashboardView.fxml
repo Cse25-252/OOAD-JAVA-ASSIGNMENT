@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="banking.gui.controller.DashboardController"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="600"
+      prefHeight="500"
+      style="-fx-padding: 30;">
+
+    <Label text="ACCESS BANK BOTSWANA"
+           style="-fx-font-size: 25px; -fx-font-weight: bold;"/>
+
+    <Label text="BANKING SYSTEM DASHBOARD"
+           style="-fx-font-size: 18px;"/>
+
+    <Button text="Customer Management"
+            prefWidth="220"
+            onAction="#handleCustomers"/>
+
+    <Button text="Account Management"
+            prefWidth="220"
+            onAction="#handleAccounts"/>
+
+    <Button text="Transactions"
+            prefWidth="220"
+            onAction="#handleTransactions"/>
+
+    <Button text="Logout"
+            prefWidth="220"
+            onAction="#handleLogout"/>
+
+</VBox>
